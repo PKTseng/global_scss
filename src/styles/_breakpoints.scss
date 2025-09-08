@@ -1,34 +1,24 @@
-@use 'sass:map';
-
-// 定義斷點
-$breakpoints: (
-  xs: 375px,
-  sm: 768px,
-  md: 1024px,
-  lg: 1440px,
-);
-
 // 建立 mixin
 @mixin xs {
-  @media (min-width: map.get($breakpoints, xs)) {
+  @media (min-width: 375px) {
     @content;
   }
 }
 
 @mixin sm {
-  @media (min-width: map.get($breakpoints, sm)) {
+  @media (min-width: 768px) {
     @content;
   }
 }
 
 @mixin md {
-  @media (min-width: map.get($breakpoints, md)) {
+  @media (min-width: 1024px) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (min-width: map.get($breakpoints, lg)) {
+  @media (min-width: 1440px) {
     @content;
   }
 }
